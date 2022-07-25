@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Display</title>
+  <style>
+  /* Coding 1*/
+    /*.navigasi {
+      background-color: pink;
+    }
+    .main {
+      background-color: lightgreen;
+    }
+    .main span {
+      background-color: blue;
+    }*/
+    /*a {
+      background-color: pink;
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+    }
+    img {
+      width: 100px;
+      height: 100px;
+    }
+    .main {
+      width: 600px;
+      background-color: lightgreen;
+    }
+    .main h2 {
+      background-color: red;
+    }*/
+    /*img {
+      display: none;
+    }*/
+    
+    /*Mengubah Perilaku Display*/
+    .emet li {
+      display: inline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Display</h1>
+  <h2>Memahami property display pada CSS</h2>
+  <p>Tag pada HTML digunakan untuk memberikan maksud/arti pada sebuah konten. misal (p untuk paragraf, h1 untuk heading utama dll.). Tag (div) dan (span) tidak memiliki arti apapun keduanya digunakan untuk mengelompokkan tag² HTML dan memberikan informasi terhadap tag² tersebut. untuk informasi lebih detail lagi silahkan kunjungi website ini <a href="http://htmldog.com/guides/html/intermediate/spandiv/"> Visit</a></p>
+  <h2>Hubungan dengan Display antara tag div dan span?</h2>
+  <p>tag div display : block</p>
+  <p>tag span : inline</p>
+  <p>"setiap tag pada HTML berada di dalam sebuah kotak. properti display pada CSS mengatur perilaku dari kotak tersebut" <a href="https://css-tricks.com/almanac/properties/d/display"> Klik</a></p>
+  <p>"setiap tag pada HTML memiliki nilai default untuk properti display. tetapi kita juga dapat mengubah perilaku dari tag tersebut dengan mengganti value nya"<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display"> Klik</a></p>
+  <h5>value display</h5>
+  <ul>
+    <li>inline</li>
+    <p>Elemen HTML yang secara default tidak menambahkan baris baru ketika dibuat</p>
+    <p>lebar dan tinggi elemenya sebesar konten yang ada didalam nya</p>
+    <p>kita tidak dapat mengatur tinggi dan lebar dari elemen inline</p>
+    <p><em>margin dan padding hanya mempengaruhi elemen secara horizontal, tidak vertikal</em></p>
+    <p>Berikut adalah elemen/tag inline : b, strong, i, em, a, span, sub, sup, button, input, label, select, textarea. <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elemente"> Klik</a></p>
+    <hr>
+    <li>inline-block</li>
+    <p>tidak ada elemen yang secara default memiliki properti display: inline-block</p>
+    <p>kita harus ubah secara manual properti tersebut</p>
+    <p>perilaku dasar nya sama dengan elemen inline</p>
+    <p>perbedaan nya, elemen inline-block dapat kita atur tinggi dan lebar nya</p>
+    
+    <li>block</li>
+    <p>Elemen HTML secara default menambahkan baris baru ketika dibuat</p>
+    <p>jika tidak diatur lebarnya, maka lebar default dari elemen block akan memenuhi lebar dari browser/parentnya</p>
+    <p>kita dapat mengatur tinggi & lebar dari elemen block</p>
+    <p>di dalam elemen block, kita dapat menyimpan tag dengan elemen inline, inlne-block, atau bahkan elemen block lagi</p>
+    <p>Berikut adalah elemen block : h1-h6, p, ol, ul, li, form, hr, div. <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements"> Klik</a></p>
+    <li>none</li>
+    <p>digunakan untuk menghilangkan sebuah elemen</p>
+  </ul>
+  <hr>
+  <div class="header">
+    <h1>Selamat datang di website kami</h1>
+  </div>
+  <div class="navigasi">
+    <h2>Daftar Link</h2>
+    <a href="#">Link1</a>
+    <a href="#">link2</a>
+    <a href="#">link3</a>
+  </div>
+  <!-- mengubah display -->
+  <div class="emet">
+    <ul>
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+      <li><a href="#">Link 4</a></li>
+      <li><a href="#">Link 5</a></li>
+    </ul>
+  </div>
+  <div class="main">
+    <h2>judul artikel</h2>
+    <img src="Adi_1.jpg" alt="Hacker">
+    <p>Aku <span>Sayang</span> kamu</p>
+  </div>
+  <div class="copyright">
+    <p>Copyright 2020 - Server Pulsa</p>
+  </div>
+ 
+</body>
+</html>

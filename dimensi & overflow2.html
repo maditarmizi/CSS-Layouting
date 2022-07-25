@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dimensi & Overflow pada CSS</title>
+  <style>
+    .satu {
+      background-color: pink;
+      width: 200px;
+      height: 200px;
+    }
+    .dua {
+      background-color: aqua;
+      width: 100%;
+    }
+    div {
+      width: 200px;
+      height: 100px;
+      background-color: purple;
+      overflow: scroll;
+    }
+  </style>
+</head>
+<body>
+  <!-- Tentang dimensi-->
+  <p>dimensi pada CSS yaitu ada width/lebar & height/tinggi. untuk satuan nya : px,%, <em>in,cm,mm,[pt(point),pc(paica) digunakan untuk printing / media cetak] </em></p>
+  <div class="satu">
+    <div class="dua">Hello World</div>
+  </div>
+  <!-- Tentang Overflow -->
+  <p>Overflow mengatur properti css, ada 4 elemen yaitu : visible,auto,hidden,scroll. perbedaan auto sama scroll yaitu kalau auto jika textnya lebih akan memunculkan scroll,tapi jika text nya kurang tidak memunculkan scroll. kalau scroll meskipun text nya kurang tetap memunculkan srcoll</p>
+  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam accusamus est enim esse culpa sapiente, totam, molestiae harum ad alias laudantium, temporibus. Asperiores perspiciatis odio nostrum quis consequatur adipisci, dicta.</div>
+</body>
+</html>

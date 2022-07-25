@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Balajar Position</title>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+    }
+    .satu {
+      background-color: lightgreen;
+    }
+    .dua {
+      background-color: violet;
+      position: relative;
+      top: 10px;
+      left: -15px;
+      
+    }
+    .tiga {
+      background-color: gold;
+    }
+  </style>
+</head>
+<body>
+  <h3>CSS Position</h3>
+  <p>static</p>
+  <ul>
+    <li><b>static</b> adalah nilai default dari tiap-tiap elemen ketika tidak diberi properti Position</li>
+    <li>Menggunakan properti selain <b>static</b> (non static), akan membuat sebuah elemen menjadi seolah olah <b>berbeda dimensi</b> dari elemen lainya</li>
+    <li>Elemen yang diberi position selain <b>static</b> dapat menggunakan properti <b>top,left,bottom,right</b> untuk mengatur posisinya</li>
+  </ul>
+  <p>relative</p>
+  <ul>
+    <li>Ketika kita menggerakkan elemen dengan posisi relative (menggunakan properti top,left,bottom & right), ruang yang ditempati oleh elemen tersebut masih ada</li>
+    <li>ketika kita menggerakkan elemen dengan posisi relative, elemen akan bergerak relatife terhadap posisi semulanya</li>
+    <li>jika kita memberi properti top: 0; dan left: 0; maka elemen tidak berubah posisinya </li>
+  </ul>
+  <div class="satu"></div>
+  <div class="dua"></div>
+  <div class="tiga"></div>
+</body>
+</html>

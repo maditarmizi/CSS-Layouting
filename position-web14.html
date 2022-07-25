@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" main="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" main="ie=edge">
+  <title>Latihan Membuat Web</title>
+  <style>
+    html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	main: '';
+	main: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Bab 14 - Materi Position Membuat Website Sederhana*/
+body {
+  font: 16px/28px arial, sans-serif;
+  background-color: #eaeaea;
+  background-image: url(sativa.png);
+  color: #333;
+  height: 9000px;
+}
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-color: lightskyblue;
+  border-bottom: 3px solid salmon;
+  z-index: 9999;
+}
+.container {
+  width: 960px;
+  margin: 80px auto;
+  background-color: #fff;
+  position: relative;
+}
+.twitter {
+  width: 200px;
+  height: 200px;
+  background-image: url(twitter.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  text-indent: -9999px;
+  position: absolute;
+  top: -23px;
+  right: -27px;
+}
+
+.header {
+  padding: 20px;
+  padding-bottom: 10px;
+}
+.header .judul {
+  font-size: 40px;
+  font-weight: bold;
+}
+.header ul li {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.header a {
+  text-decoration: none;
+  color: salmon;
+  padding: 3px;
+}
+.header a:hover {
+  background-color: lightskyblue;
+  color: white;
+}
+.hero {
+  height: 320px;
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-position: 0 -230px;
+  border-bottom: 5px solid lightskyblue;
+  border-top: 5px solid salmon;
+}
+.main {
+  width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+  float: left;
+}
+.main h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+.main .penulis {
+  font-size: 11px;
+  margin-top: -5px;
+}
+.main .penulis a {
+  color: salmon;
+  text-decoration: none;
+}
+.main .penulis a:hover {
+  background-color: lightskyblue;
+  color: white;
+}
+.main p {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* sidebar */
+.sidebar {
+  width: 300px;
+  float: right;
+  padding: 20px;
+}
+.sidebar h3 {
+  font-weight: bold;
+  color: #666;
+}
+.sidebar img {
+  width: 70px;
+  height: 70px;
+  float: left;
+  padding-right: 10px;
+}
+.sidebar p {
+  font: 12px/18px arial;
+}
+.footer {
+  background-color: #333;
+  padding: 20px;
+}
+.footer .copy {
+  color: #eaeaea;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+
+
+  </style>
+</head>
+<body>
+ <div class="top-bar"></div>
+ 
+  <div class="container">
+    <a href="https://www.instagram.com/adi_dev8080" class="twitter" target="_blank">@adi_dev8080</a>
+    
+    <div class="header">
+      <h1 class="judul">MyWebsite</h1>
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">products</a></li>
+        <li><a href="#">service</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </div>
+    <div class="hero"></div>
+    <div class="content cf">
+      <div class="main">
+        <h2>Judul Artikel</h2>
+      <p class="penulis">Ditulis oleh <a href="#">M Adi Tarmizi</a>. Pada 21 Januari 2021.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis deserunt dolores accusamus facere blanditiis voluptatibus culpa nihil illum quae, temporibus? Repudiandae culpa suscipit molestias, blanditiis, odio fugit deserunt officia provident.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error cum saepe excepturi exercitationem esse quibusdam et ratione earum doloribus officiis repellat, neque deserunt mollitia illo quam laborum pariatur eos fugit amet corrupti magnam hic perspiciatis iusto. Eaque eius ullam, non veritatis reprehenderit voluptates dignissimos ipsum, quidem minima similique fugit rerum ut perferendis tenetur, minus ipsa enim iusto. Quidem iure, animi repellendus sunt itaque aliquid dolorem accusantium tempore nulla laboriosam. Eaque, dolore, excepturi. Eaque possimus molestiae voluptatibus amet. Accusamus inventore veritatis esse voluptate quisquam facere nam, harum labore aperiam libero aut, quasi expedita aliquam iure? Ut eligendi consectetur repellat fugiat accusantium.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis itaque, consectetur quibusdam explicabo id illum dolores voluptas vel, sit ea saepe! Minus nam recusandae ipsam error officiis possimus reiciendis repellendus asperiores doloremque quis ipsum maxime veritatis corporis cum illum, soluta ad autem architecto, dolorem hic obcaecati a earum, est! Nihil, excepturi cum doloremque eum ullam dignissimos accusamus reiciendis pariatur! Veritatis voluptatum eaque molestiae eius cum possimus, excepturi obcaecati. Animi facilis debitis sapiente quis corrupti incidunt cupiditate, pariatur accusantium vel velit.</p>
+      </div>
+      <div class="sidebar">
+        <h3>Tentang Penulis</h3>
+        <img src="pulsa.png" alt="adi">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore reiciendis beatae, iure, cum quidem ad praesentium commodi, accusantium quos pariatur mollitia! Labore debitis odit soluta eaque quibusdam, iste ea, itaque.</p>
+      </div>
+      </div>
+    <div class="footer">
+      <div class="copy">Copyright ©2021 - M Adi Tarmizi</div>
+    </div>
+  </div>
+  
+</body>
+</html>
